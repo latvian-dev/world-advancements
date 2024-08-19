@@ -1,0 +1,30 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+issueTrackerURL = "https://github.com/latvian-dev/world-advancements/issues"
+license = "MIT"
+
+[[mods]]
+modId = "worldadvancements"
+version = "${version}"
+displayName = "World Advancements"
+authors = "latvian.dev"
+description = '''
+Makes advancements work per-world, not per-player
+'''
+
+[[dependencies.worldadvancements]]
+modId = "neoforge"
+mandatory = true
+versionRange = "[21.0.148,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.worldadvancements]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "worldadvancements.mixins.json"
